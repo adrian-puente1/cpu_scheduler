@@ -1,5 +1,5 @@
-#ifndef CLASSES
-#define CLASSES
+#ifndef PROCESS
+#define PROCESS
 
 /*
 waiting time - sum of periods a process spent waiting in the ready queue
@@ -16,11 +16,13 @@ private:
 	int wait;					// waiting time of process
 	int turnA;					// turnaround time of process
 	int response;				// response time of process
+	int dSize;					// size of data
 
 public:
 	Process();
 	void getData(int* stream, int size);
+	void readData();
 	~Process();
 };
 
-#endif // !CLASSES
+#endif // !PROCESS

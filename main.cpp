@@ -1,8 +1,8 @@
 #include<iostream>
 #include<stdio.h>
-#include"classes.h"
+#include"process.h"
 
-void main()
+int main()
 {
 	int i = 0;
 	int k = 0;
@@ -73,13 +73,6 @@ void main()
 	Process P8;
 	P8.getData(stream, k);
 	k = 0;
+	
 
-	P1.~Process();
-	P2.~Process();
-	P3.~Process();
-	P4.~Process();
-	P5.~Process();
-	P6.~Process();
-	P7.~Process();
-	P8.~Process();
 }
