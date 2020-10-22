@@ -27,7 +27,9 @@ void Process::getData(int* stream, int size)
 	for (int i = 0; i < size; i++) // sets data to size of stream and sets all values equal to stream
 	{
 		data[i] = stream[i];
+		//std::cout << data[i] << " ";
 	}
+	//std::cout << std::endl;
 }
 
 void Process::readData()

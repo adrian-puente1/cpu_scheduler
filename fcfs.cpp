@@ -2,22 +2,15 @@
 #include"fcfs.h"
 #include"process.h"
 
-Node::Node()
-{
 
+/*
+void addSauce(Process* process, Node**head)	// adds node to end of linked list
+{
+	Node* newSticc = new Node;
+	newSticc->mozzSticc = process;
 }
 
-Node::~Node()
+void delEminem(Process* process)
 {
 
-}
-
-void Node::addSauce(Process* process)
-{
-
-}
-
-void Node::delEminem(Process* process)
-{
-
-}
+}*/
