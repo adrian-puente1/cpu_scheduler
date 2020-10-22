@@ -9,7 +9,6 @@ response time - time from submission to first response
 
 class Process
 {
-private:
 	int* data;					// array with process data
 	bool flag;					// if true, data[0] is CPU burst, else I/O
 	bool active;				// if true, process is not completed

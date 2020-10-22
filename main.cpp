@@ -1,6 +1,7 @@
 #include<iostream>
 #include<stdio.h>
 #include"process.h"
+#include"fcfs.h"
 
 int main()
 {

@@ -1,5 +1,6 @@
 #include<iostream>
 #include"process.h"
+#include"fcfs.h"
 
 Process::Process()
 {
