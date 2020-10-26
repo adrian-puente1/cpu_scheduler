@@ -1,14 +1,15 @@
 #include<iostream>
 #include<stdio.h>
 #include"process.h"
-#include"fcfs.h"
 
 int main()
 {
 	int i = 0;
 	int k = 0;
-	//Node* head = NULL;
+	Process* headProcess = NULL;
 	int* stream = NULL;
+	Process P1, P2, P3, P4, P5, P6, P7, P8;
+
 	int data[8][20] = { 
 		{ 5, 27,  3, 31,  5, 43,  4, 18,  6, 22,  4, 26,  3, 24,  4,  0,  0,  0,  0,  0} ,
 		{ 4, 48,  5, 44,  7, 42, 12, 37,  9, 76,  4, 41,  9, 31,  7, 43,  8,  0,  0,  0},
@@ -19,63 +20,52 @@ int main()
 		{14, 46, 17, 41, 11, 42, 15, 21,  4, 32,  7, 19, 16, 33, 10,  0,  0,  0,  0,  0} ,
 		{ 4, 14,  5, 33,  6, 51, 14, 73, 16, 87,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0} 
 	};
-	// create Pn processes classes and fill with data and data size
+	// create Pn process ojects and fill with data and data size
 	{
 		stream = data[i];				// stores address of process
 		while (data[i][k] != 0) { k++; }	// finds length of data
-		Process P1;
 		P1.getData(stream, k);
 		k = 0;
 		i++;
 	
 		stream = data[i];
 		while (data[i][k] != 0) { k++; }
-		Process P2;
 		P2.getData(stream, k);
 		k = 0;
 		i++;
 
 		stream = data[i];
 		while (data[i][k] != 0) { k++; }
-		Process P3;
 		P3.getData(stream, k);
 		k = 0;
 		i++;
 
 		stream = data[i];
 		while (data[i][k] != 0) { k++; }
-		Process P4;
 		P4.getData(stream, k);
 		k = 0;
 		i++;
 
 		stream = data[i];
 		while (data[i][k] != 0) { k++; }
-		Process P5;
 		P5.getData(stream, k);
 		k = 0;
 		i++;
 
 		stream = data[i];
 		while (data[i][k] != 0) { k++; }
-		Process P6;
 		P6.getData(stream, k);
 		k = 0;
 		i++;
 
 		stream = data[i];
 		while (data[i][k] != 0) { k++; }
-		Process P7;
 		P7.getData(stream, k);
 		k = 0;
 		i++;
 
 		stream = data[i];
-		while (data[i][k] != 0) {
-			//std::cout << data[i][k] << " ";
-			k++;
-		}
-		Process P8;
+		while (data[i][k] != 0) { k++; }
 		P8.getData(stream, k);
 		k = 0;
 	}
